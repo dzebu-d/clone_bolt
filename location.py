@@ -5,7 +5,7 @@ import requests
 
 def locationCoordinates():
     try:
-        response = requests.get('https://ipinfo.io/?token=0d9efacd76837f')
+        response = requests.get('https://ipinfo.io/')
         
         data = response.json()
         loc = data['loc'].split(',')
