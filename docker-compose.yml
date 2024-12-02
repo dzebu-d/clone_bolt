@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16.2
+    environment:
+      - POSTGRES_PASSWORD=supersecret
+      - POSTGRES_USER=boostdev
+      - POSTGRES_DB=boostdevdb
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
